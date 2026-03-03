@@ -1,0 +1,31 @@
+/* 공통 common.css */
+#wrap {}
+#wrap * {transition: all 0.3s;}
+#wrap .container {
+    min-width: 320px;
+}
+/* mobile design - .sponsor_btn */
+#wrap .container .sponsor_btn {
+    background: linear-gradient(90deg, #FE9300, #FF7300);
+    width: 164px; height: 41px; display: block; margin: 0 auto;
+    border-radius: 37.5px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center; 
+    gap: 10px;
+}
+#wrap .container .sponsor_btn::after {
+    content: '>'; display: block; font-size: 0.75rem;
+    color: #fff;
+}
+#wrap .container .sponsor_btn em {
+    font-weight: 500; 
+    color: #fff;
+}
+#wrap .container .sponsor_btn:hover::after {
+    filter: invert(80%);
+    animation: sponsor_right 1s linear alternate infinite;
+}
+@keyframes sponsor_right {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(5px);}
+}
