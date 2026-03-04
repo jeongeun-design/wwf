@@ -35,3 +35,60 @@
 #wrap .intro .sponsor_btn:nth-child(1) {}
 #wrap .intro .sponsor_btn:nth-child(1) {}
 #wrap .intro .sponsor_btn {}
+/* ============================================================2행 퀴즈m */
+#wrap .quiz_bg {
+    background-image: url(../images/quiz_bg.png); 
+    background-size: cover; background-position: center;
+    padding: 70px; 
+}
+#wrap .quiz_bg .quiz {
+    display: flex; flex-flow: column nowrap; /* t, d column -> row */
+    gap: 50px;
+}
+#wrap .quiz_bg .quiz .quiz_list {}
+#wrap .quiz_bg .quiz .quiz_list > * {margin-bottom: 16px;}
+#wrap .quiz_bg .quiz .quiz_list h1 {font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.01rem;
+    font-weight: 500;
+}
+#wrap .quiz_bg .quiz .quiz_list h2 {}
+#wrap .quiz_bg .quiz .quiz_list h2 span {
+    display: block; 
+    line-height: 1.7;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm {margin-bottom: 0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul {margin-bottom: 16px;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {margin-bottom: 16px;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:last-child {margin-bottom: 0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input {display: none;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input:checked + label {
+    background-image: url(../images/chk_on.svg);
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+    font-size: 0.88rem;
+    background-image: url(../images/chk_off.svg);
+    background-size: 16px; background-repeat: no-repeat;
+    padding-left: 47.75px;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:hover label {color: #FF7300;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn:hover {box-shadow: 0 0 15px #fff;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn {transition: box-shadow 0.5s;
+    background-color: #050505; color: #fff;
+    padding: 10px;
+    line-height: 1.7; 
+    border-radius: 50px;
+    width: 100%; 
+}
+#wrap .quiz_bg .quiz #quiz_status {}
+#wrap .quiz_bg .quiz #quiz_status img {width: 100%;}
+#wrap .quiz_bg .quiz #quiz_status p {
+    line-height: 1.7;
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+#wrap .quiz_bg .quiz .quiz_list h1, 
+#wrap .quiz_bg .quiz .quiz_list h2 span, 
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label,
+#wrap .quiz_bg .quiz #quiz_status p {color: #fff;}

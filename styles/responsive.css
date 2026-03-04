@@ -1,7 +1,15 @@
 /* 반응형조건 responsive */
 /* m(320~) -> t(1024~) -> d(1250~) */
+@media screen and (min-width:520px) {
+    /* 2행 */
+    #wrap .quiz_bg .quiz {flex-flow: row nowrap;}
+    #wrap .quiz_bg .quiz > * {flex:1}
+}
 @media screen and (min-width:860px) {
     #wrap .intro {padding:300px 0 100px;}
+    #wrap .quiz_bg .quiz {
+        flex-flow: row nowrap;
+    }
 }/* 860~1023 */
 @media screen and (min-width:1024px) {
     #wrap .intro {padding:410px 0 100px;}
@@ -14,6 +22,19 @@
     #wrap .container .sponsor_btn {width: 238px; height: 60px;}
     #wrap .container .sponsor_btn em {font-size: 1.38rem;}
     #wrap .container .sponsor_btn::after {font-size: 1rem;}
+    /* 2행 */
+    #wrap .quiz_bg {padding: 150px 80px;}
+    #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 2.5rem;}
+    #wrap .quiz_bg .quiz .quiz_list h2 {font-size: 1.25rem;}
+    #wrap .quiz_bg .quiz .quiz_list h2 span {display: inline-block;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {margin-bottom: 14px;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+        display: block;
+        line-height: 1.7; 
+        font-size: 1.25rem;
+        background-size: 28px;
+    }
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn {font-size: 1.25rem;}
 }/* 1024~1249 */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding:447px 0 100px;}
@@ -27,4 +48,7 @@
     #wrap .container .sponsor_btn {width: 409px; height: 71px;}
     #wrap .container .sponsor_btn em {font-size: 2.13rem;}
     #wrap .container .sponsor_btn::after {font-size: 2rem;}
+    /* 2행 */
+    #wrap .quiz_bg {padding: 150px 335px;}
+    #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 3.44rem;}
 }/* 1250~max */
