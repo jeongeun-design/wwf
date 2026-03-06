@@ -3,8 +3,23 @@
 #wrap * {transition: all 0.3s;}
 #wrap .container {
     min-width: 320px;
+    background-size: cover; background-position: center;
+    padding: 70px 15px;
 }
 #wrap .container .contents {max-width: 1250px; margin: 0 auto;}
+#wrap .container .contents h1 {margin: 0 0 40px;
+    font-size: 1.38rem; font-weight: 500;
+    line-height: 1.2;
+}
+#wrap .container .contents h1 .highlight {
+    background-color: #fff; color: #050505;
+    font-weight: 500;
+}
+#wrap .container .contents h1+p {
+    font-size: 0.81rem; font-weight: 500;
+    line-height: 1.7;
+    margin: 0 0 22px;
+}
 /* mobile design - .sponsor_btn */
 #wrap .container .sponsor_btn {
     background: linear-gradient(90deg, #FE9300, #FF7300);
@@ -22,8 +37,8 @@
     font-weight: 500; 
     color: #fff;
 }
+#wrap .container .sponsor_btn:hover::after {}
 #wrap .container .sponsor_btn:hover::after {
-    filter: invert(80%);
     animation: sponsor_right 1s linear alternate infinite;
 }
 @keyframes sponsor_right {
