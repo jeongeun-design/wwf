@@ -34,6 +34,26 @@
         line-height: 1.2;
     }
     #wrap .activity_bg .activity .details li {padding-top: 189px;}
+    /* 9행 */
+    #wrap .gift_bg .gift .gift_title h1 {margin: 0;}
+    #wrap .gift_bg .gift .gift_title {
+        flex-flow: row nowrap; 
+        justify-content: space-between;
+        align-items: end;
+    }
+    #wrap .gift_bg .gift .gift_list {
+        grid-template-areas: 
+        'gift1 gift2'
+        'gift3 gift3';
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+    #wrap .gift_bg .gift .gift_list li .gift_imgs {height: 300px;}
+    #wrap .gift_bg .gift .gift_list li .gift_imgs img {
+        transform: translateY(0); 
+    }
+    #wrap .gift_bg .gift > p {margin-top: 40px;}
+    #wrap .gift_bg .gift {text-align: right;}
 }/* 860~1023 */
 @media screen and (min-width:1024px) {
     #wrap .intro {padding:410px 0 100px;}
@@ -43,6 +63,7 @@
     }
     #wrap .intro h1 {margin-bottom: 100px;}
     #wrap .intro h1 span {font-size: 3.13rem;}
+    #wrap .container {padding: 200px 80px;}
     #wrap .container .sponsor_btn {width: 238px; height: 60px;}
     #wrap .container .sponsor_btn em {font-size: 1.38rem;}
     #wrap .container .sponsor_btn::after {font-size: 1rem;}
@@ -74,6 +95,24 @@
     }
     #wrap .activity_bg .activity .details li .txt dt {font-size: 2.13rem; line-height: 1.2;}
     #wrap .activity_bg .activity .details li .txt dd {font-size: 1.25rem; line-height: 1.7;}
+    /* 9행 */
+    #wrap .gift_bg .gift .gift_title {margin-bottom: 70px;}
+    #wrap .gift_bg .gift .gift_list {
+        grid-template-areas: 
+        'gift1 gift2 gift3';
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 45px;
+    }
+    #wrap .gift_bg .gift .gift_list li .gift_imgs img {
+        width: 100%; 
+        transform: translateY(0);
+        /* object-fit: cover;  */
+    }
+    #wrap .gift_bg .gift > p {font-size: 1.25rem;}
+    #wrap .gift_bg .gift {text-align: center;}
+    /* 10 */
+    #wrap .payment_bg .payment dt {font-size: 2.13rem;}
+#wrap .payment_bg .payment dd {font-size: 1.25rem;}
 }/* 1024~1249 */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding:447px 0 100px;}
@@ -88,10 +127,10 @@
     #wrap .container .sponsor_btn em {font-size: 2.13rem;}
     #wrap .container .sponsor_btn::after {font-size: 2rem;}
     /* 2행 */
-    #wrap .quiz_bg {padding: 150px 335px;}
+    /* #wrap .quiz_bg {padding: 150px 335px;} */
     #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 3.44rem;}
     /* 3~6공통 */
-    #wrap .container {padding: 200px 335px;}
+    #wrap .container {padding: 200px 140px;}
     #wrap .container .contents h1 {font-size: 3.44rem; margin: 0 0 55px;}
     #wrap .container .contents h1+p {font-size: 2.13rem;}
     #wrap .reduction_bg .reduction p {font-size: 2.13rem; line-height: 1.2;}
