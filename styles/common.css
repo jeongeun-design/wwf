@@ -15,6 +15,11 @@
     background-color: #fff; color: #050505;
     font-weight: 500;
 }
+#wrap .container .reduction_bg .reduction > p {/*  */
+    font-size: 0.81rem; font-weight: 500;
+    line-height: 1.7;
+    margin: 0 0 22px;
+}
 #wrap .container .contents h1+p {
     font-size: 0.81rem; font-weight: 500;
     line-height: 1.7;
