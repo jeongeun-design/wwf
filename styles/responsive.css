@@ -5,6 +5,7 @@
     #wrap .quiz_bg .quiz {flex-flow: row nowrap;}
     #wrap .quiz_bg .quiz > * {flex:1}
     #wrap .container .sponsor_btn {margin: 0 auto;}
+    #wrap .gift_bg .gift .gift_title .sponsor_btn {margin: 0;}
 }
 @media screen and (min-width:860px) {
     #wrap .intro {padding:300px 0 100px;}
@@ -37,6 +38,7 @@
     #wrap .activity_bg .activity .details li {padding-top: 189px;}
     /* 9행 */
     #wrap .gift_bg .gift .gift_title h1 {margin: 0;}
+    #wrap .gift_bg .gift .gift_title .sponsor_btn {margin: 0;}
     #wrap .gift_bg .gift .gift_title {
         flex-flow: row nowrap; 
         justify-content: space-between;
@@ -51,7 +53,8 @@
     }
     #wrap .gift_bg .gift .gift_list li .gift_imgs {height: 300px;}
     #wrap .gift_bg .gift .gift_list li .gift_imgs img {
-        transform: translateY(0); width: auto; height: 100%;
+        transform: translateY(0); 
+        /* width: auto; height: 100%; */
     }
     #wrap .gift_bg .gift > p {margin-top: 40px;}
     #wrap .gift_bg .gift {text-align: right;}
