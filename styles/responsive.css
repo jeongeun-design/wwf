@@ -51,7 +51,7 @@
     }
     #wrap .gift_bg .gift .gift_list li .gift_imgs {height: 300px;}
     #wrap .gift_bg .gift .gift_list li .gift_imgs img {
-        transform: translateY(0); 
+        transform: translateY(0); width: auto; height: 100%;
     }
     #wrap .gift_bg .gift > p {margin-top: 40px;}
     #wrap .gift_bg .gift {text-align: right;}
